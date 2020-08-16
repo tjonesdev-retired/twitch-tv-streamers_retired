@@ -1,0 +1,348 @@
+body {
+  background-color: #6441A4;
+  /*purple*/
+}
+
+a {
+  display: block;
+}
+
+
+/* START HEADER */
+#header {
+  padding-bottom: 5px;
+  min-width: 280px;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#header a:link,
+#header a:visited {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Arial narrow", sans-serif;
+  color: #6441A4;
+  /*purple*/
+  text-align: center;
+}
+
+#twitchLogo {
+  display: block;
+  margin: auto;
+  width: 150px;
+}
+/* END HEADER */
+
+
+/* START NAVBAR */
+#navbar {
+  margin: auto;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 0;
+  border: none;
+  min-width: 280px;
+}
+
+#allBtn,
+#onlineBtn,
+#offlineBtn {
+  width: 80px;
+  height: 40px;
+  color: white;
+  border-radius: 0 !important;
+}
+
+#allBtn {
+  background-color: #6441A4;
+  /*purple*/
+  border: 3px solid #6441A4;
+  /*purple*/
+}
+
+#onlineBtn {
+  background-color: lightgreen;
+  border: 3px solid lightgreen;
+}
+
+#offlineBtn {
+  background-color: grey;
+  border: 3px solid grey;
+}
+
+#allBtn:hover,
+#onlineBtn:hover,
+#offlineBtn:hover {
+  background-color: white;
+  color: dimgrey;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s;
+}
+
+#allBtn:focus {
+  color: pink;
+}
+
+#userList,
+#onlineList,
+#offlineList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* END NAVBAR */
+
+
+/* START LIST */
+.user {
+  height: 230px;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+/* ~~Start User Header~~ */
+.userHeader {
+  position: relative;
+  height: 70px;
+}
+
+.logo img {
+  position: absolute;
+  width: 70px;
+}
+
+.name {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  margin: auto;
+  width: 140px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.mature {
+  position: absolute;
+  bottom: 28px;
+  color: red;
+  padding-left: 5px;
+}
+
+.bubble {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+}
+/* ~~End User Header~~ */
+
+/* ~~Start User Body~~ */
+.userBody {
+  position: relative;
+  background-color: ghostwhite;
+  height: 160px;
+  padding: 10px;
+}
+
+.info {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.game {
+  font-weight: normal;
+  font-size: 14px;
+}
+/* ~~End User Body~~ */
+
+/* ~~Start ONLINE~~ */
+.online {
+  font-weight: 600;
+}
+
+.onlineUserHeader {
+  background-color: white;
+}
+
+.onlineName {
+  font-size: 16px;
+}
+
+.online a:link,
+.online a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.online a:hover,
+.online a:active {
+  color: lightgreen;
+}
+
+.onlineBubble {
+  color: lightgreen;
+}
+
+.onlineUserBody {
+  border-bottom: 15px solid lightgreen;
+}
+
+.onlineInfo {
+  color: lightgreen;
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: 2px solid lightgreen;
+}
+/* ~~End ONLINE~~ */
+
+/* ~~Start OFFLINE~~ */
+.offline {
+  font-style: italic;
+  color: grey;
+}
+
+.offlineUserHeader {
+  background-color: gainsboro;
+}
+
+.offline a:link,
+.offline a:visited {
+  text-decoration: none;
+  color: grey;
+}
+
+.offline a:hover,
+.offline a:active {
+  color: dimgrey;
+  font-weight: bold;
+}
+
+.offlineUserBody {
+  border-bottom: 15px solid grey;
+}
+
+.offlineInfo {
+  border-bottom: 2px solid grey;
+}
+/* ~~End OFFLINE~~ */
+
+/* ~~Start ERROR~~ */
+.error {
+  font-style: italic;
+  color: grey;
+}
+
+.errorUserHeader {
+  background-color: gainsboro;
+}
+
+.errorName {
+  display: block;
+}
+
+.errorBubble {
+  color: red;
+}
+
+.errorStatus {
+  text-align: center;
+  line-height: 70px;
+}
+
+.errorUserBody {
+  border-bottom: 15px solid red;
+}
+/* ~~End ERROR~~ */
+/* END LIST */
+
+@media only screen and (min-width: 768px) {
+  .user {
+    width: 700px;
+    height: 150px;
+  }
+
+  .userHeader {
+    width: 100%;
+    height: 40px;
+  }
+
+  .logo img {
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+  }
+
+  .name {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+  }
+
+  .bubble {
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .userBody {
+    height: 110px;
+    border: none;
+  }
+  
+  .info {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    margin-left: 165px;
+    width: 480px;
+    border: none;
+  }
+  
+  .game {
+    margin-left: 165px;
+    font-size: 16px;
+  }
+
+  .online {
+    border-right: 40px solid lightgreen;
+  }
+  
+  .onlineName {
+    font-size: 20px;
+  }
+  
+  .offline {
+    border-right: 40px solid grey;
+  }
+  
+  .offlineName {
+    font-size: 18px;
+  }
+  
+  .error {
+    border-right: 40px solid red;
+  }
+  
+  .errorName {
+    font-size: 18px;
+  }
+  
+  .errorStatus {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+}
